@@ -1,0 +1,1 @@
+insert into ticket(passenger_name,booking_date,source_station,destination_station,email) values('Abhishek','2018/10/25','patna','delhi','abhi03.bhardwaj@yahoo.com');
