@@ -1,4 +1,4 @@
-package com.user;
+	package com.user;
 
 
 
@@ -11,13 +11,26 @@ import javax.persistence.SequenceGenerator;
 
 import org.springframework.stereotype.Repository;
 
-//@Author Madhusree, Shiva, Sania, Ashwathi
+//@Author Madhushree, Shiva, Sania, Ashwathi
 @SequenceGenerator(name="port",sequenceName="port",initialValue=1000)
 
 @Entity(name="User")
 public class User
 {  
 	
+	public User( String firstName, String lastName, String gender, String email, String password, int age,
+			long phoneNo, String address) {
+		super();
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.gender = gender;
+		this.email = email;
+		this.password = password;
+		this.age = age;
+		this.phoneNo = phoneNo;
+		this.address = address;
+	}
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", gender=" + gender

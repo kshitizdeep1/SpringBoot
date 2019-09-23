@@ -22,10 +22,10 @@ public class UserService {
 	//for login validation
 	public String validateUser(Long userid,String password) {
 		User user = userdao.findOne(userid);
-		//System.out.println(user);
+		System.out.println(user);
 		// && user.getPassword()==password
 		//user.getUserId()==userid
-		if(user.getPassword().equals(password)) {
+		if(user.getPassword().equals(password)){
 			//System.out.println("redirecting to the dashboard");
 			return "redirecting to the dashboard";
 		}
@@ -34,9 +34,6 @@ public class UserService {
 		
 	}
 	
-	public Iterable<User> getAll() {
-		return userdao.findAll();
-	}
 	
 	
 }
